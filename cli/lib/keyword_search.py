@@ -1,6 +1,6 @@
 import string
 
-from nltk.stem import PorterStemmer
+from nltk.stem import PorterStemmer # type: ignore
 
 from .search_utils import DEFAULT_SEARCH_LIMIT, load_movies, load_stopwords
 
