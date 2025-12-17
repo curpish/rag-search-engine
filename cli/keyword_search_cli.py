@@ -17,7 +17,7 @@ def main() -> None:
     match args.command:
         case "search":
             print("Searching for:", args.query)
-            results = search_command(args.query)
+            results = search_command(args.query.lower())
             for i, res in enumerate(results, 1):
                 print(f"{i}. {res['title']}")
         case _:
